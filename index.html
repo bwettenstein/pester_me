@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="app.js" defer></script>
+    <title>Pester Me</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Pester me</h1>
+    </header>
+
+    <div id="container">
+      <p>Enter your email (<span class="required">*</span>)</p>
+      <input type="text" id="email" />
+      <p>
+        (Optional) Write the subject line for the email, otherwise a default one
+        will be chosen
+      </p>
+      <input type="text" id="subject" />
+      <p>
+        What do you want to be pestered about (<span class="required">*</span>)
+      </p>
+      <textarea name="myTextBox" cols="50" rows="5" id="pesteredText">
+      </textarea>
+      <p>
+        When do you want the email to be sent? (leave blank for immediately)
+      </p>
+      <input type="number" id="time" />
+      <div class="radio">
+        <p>Hours</p>
+        <input type="radio" name="time" id="hours" value="hours" />
+      </div>
+      <div class="radio">
+        <p>Minutes</p>
+        <input type="radio" name="time" id="minutes" value="minutes" />
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </div>
+  </body>
+</html>

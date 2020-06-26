@@ -1,0 +1,52 @@
+@import 'config';
+
+* {
+  font-family: $font-family;
+}
+
+body {
+  background-color: $light-grey;
+  #header {
+    border-bottom: solid;
+    padding: $small-padding;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    align-items: center;
+    padding: $small-padding;
+    margin-left: 7vw;
+
+    input,
+    textarea {
+      width: 15vw;
+      max-width: 25vw;
+    }
+
+    input:focus,
+    textArea:focus,
+    button:focus {
+      outline: none;
+    }
+
+    span {
+      color: red;
+    }
+
+    .radio {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: $small-padding;
+    }
+
+    #submit {
+      margin-top: $medium-margin;
+      width: 10rem;
+      height: 3rem;
+      border-radius: 20px;
+    }
+  }
+}
